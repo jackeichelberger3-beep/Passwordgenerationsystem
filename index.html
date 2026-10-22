@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keyforge — PIN, password, API key and UUID generators</title>
+    <meta
+      name="description"
+      content="Free secure generators for PIN codes, recovery codes, backup codes, master passwords, API keys, JWT keys, encryption keys and UUIDs. Generated locally in your browser — nothing is stored."
+    />
+    <meta name="theme-color" content="#06080b" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/tools.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">KF</span>
+          <span class="brand-name">Keyforge</span>
+        </a>
+        <details class="nav-menu">
+          <summary>Generators</summary>
+          <nav class="nav-menu-panel">
+            <p class="nav-label">Access codes</p>
+            <a href="pin-codes.html">PIN codes</a>
+            <a href="recovery-codes.html">Recovery codes</a>
+            <a href="backup-codes.html">Backup codes</a>
+            <p class="nav-label">Secrets &amp; keys</p>
+            <a href="master-passwords.html">Master passwords</a>
+            <a href="api-keys.html">API keys</a>
+            <a href="jwt-keys.html">JWT keys</a>
+            <a href="encryption-keys.html">Encryption keys</a>
+            <p class="nav-label">Identifiers</p>
+            <a href="uuid-keys.html">UUID keys</a>
+          </nav>
+        </details>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <p class="hero-eyebrow">Secure code generators</p>
+        <h1>Random codes a machine <em>can't guess</em>.</h1>
+        <p class="hero-lead">
+          Eight purpose-built generators for PIN codes, recovery codes, backup codes, master passwords, API keys, JWT
+          keys, encryption keys and UUIDs. Generate a set, copy it, and close the tab — nothing is stored and nothing
+          is sent anywhere.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="master-passwords.html">Generate a master password</a>
+          <a class="btn btn-outline btn-lg" href="#tools">Browse all eight</a>
+        </div>
+        <div class="trust-row">
+          <span>Web Crypto randomness</span>
+          <span>Runs entirely in your browser</span>
+          <span>Nothing stored</span>
+        </div>
+      </section>
+
+      <section id="tools">
+        <div class="section-head">
+          <h2>All generators</h2>
+          <span>8 tools</span>
+        </div>
+
+        <p class="group-label">Access codes</p>
+        <div class="card-grid">
+          <a class="tool-card" href="pin-codes.html">
+            <span class="tool-badge">PIN</span>
+            <h3>PIN codes</h3>
+            <p>Short numeric codes for locks, keypads and cards.</p>
+            <span class="card-open">Open →</span>
+          </a>
+          <a class="tool-card" href="recovery-codes.html">
+            <span class="tool-badge">REC</span>
+            <h3>Recovery codes</h3>
+            <p>Single-use codes that get you back into an account.</p>
+            <span class="card-open">Open →</span>
+          </a>
+          <a class="tool-card" href="backup-codes.html">
+            <span class="tool-badge">BCK</span>
+            <h3>Backup codes</h3>
+            <p>Two-factor backup codes for when the phone is gone.</p>
+            <span class="card-open">Open →</span>
+          </a>
+        </div>
+
+        <p class="group-label">Secrets &amp; keys</p>
+        <div class="card-grid">
+          <a class="tool-card" href="master-passwords.html">
+            <span class="tool-badge">PWD</span>
+            <h3>Master passwords</h3>
+            <p>Long random passwords and memorable passphrases.</p>
+            <span class="card-open">Open →</span>
+          </a>
+          <a class="tool-card" href="api-keys.html">
+            <span class="tool-badge">KEY</span>
+            <h3>API keys</h3>
+            <p>Bearer tokens with the prefix your service expects.</p>
+            <span class="card-open">Open →</span>
+          </a>
+          <a class="tool-card" href="jwt-keys.html">
+            <span class="tool-badge">JWT</span>
+            <h3>JWT keys</h3>
+            <p>Signing secrets and asymmetric key pairs.</p>
+            <span class="card-open">Open →</span>
+          </a>
+          <a class="tool-card" href="encryption-keys.html">
+            <span class="tool-badge">AES</span>
+            <h3>Encryption keys</h3>
+            <p>Raw AES key material in any encoding.</p>
+            <span class="card-open">Open →</span>
+          </a>
+        </div>
+
+        <p class="group-label">Identifiers</p>
+        <div class="card-grid">
+          <a class="tool-card" href="uuid-keys.html">
+            <span class="tool-badge">UUID</span>
+            <h3>UUID keys</h3>
+            <p>Random v4 and time-ordered v7 identifiers.</p>
+            <span class="card-open">Open →</span>
+          </a>
+        </div>
+
+        <div class="promises">
+          <div class="promise">
+            <span class="promise-mark">&lt;/&gt;</span>
+            <h3>Cryptographic randomness</h3>
+            <p>
+              Every value comes from your browser's Web Crypto API — a cryptographic random generator, never
+              Math.random.
+            </p>
+          </div>
+          <div class="promise">
+            <span class="promise-mark">0B</span>
+            <h3>Nothing leaves your device</h3>
+            <p>No accounts, no database, no logging. Codes exist only in this tab until you copy or download them.</p>
+          </div>
+          <div class="promise">
+            <span class="promise-mark">{ }</span>
+            <h3>Built for real formats</h3>
+            <p>
+              AES key lengths, JWT signature sizes, grouped recovery codes and UUID v4/v7 in the shapes their systems
+              expect.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div>
+          <span class="brand-name">Keyforge</span>
+          <p class="footer-note">
+            Every code on this site is generated in your browser with the Web Crypto API. Nothing is stored, logged or
+            sent anywhere — close the tab and it is gone.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
